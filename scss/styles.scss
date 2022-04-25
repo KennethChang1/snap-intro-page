@@ -1,0 +1,130 @@
+@import './normalize';
+$font: 'Epilogue', sans-serif;
+$light_color: #686868;
+
+body{
+    font-family: $font;
+}
+
+.section{
+    padding: 0 16px;
+}
+
+.btn{
+    text-decoration: none;
+    text-align: center;
+
+    &--primary{
+        color: $light_color;
+        margin-bottom: 1em;
+    }
+
+    &--secondary{
+        color: $light_color;
+        border: 1px solid $light_color;
+        width: 195px;
+        padding: .7em;
+        border-radius: 15px;
+    }
+}
+
+.nav{
+    margin: 16px 0 24px;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__links{
+        position: absolute;
+        height: 100vh;
+        list-style: none;
+        background-color: white;
+        overflow: hidden;
+        width: 0;
+        right: 0;
+        transition: 0.5s;
+    }
+
+    &__active{
+        width: 240px;
+    }
+
+    &__ul{
+        color: $light_color;
+        list-style: none;
+        margin-bottom: 2em;
+
+        li{
+            margin-bottom: 1em;
+        }
+    }
+
+    &__sub-ul{
+        display: none;
+    }
+
+    &__arrow::after{
+        content: url('../images/icon-arrow-down.svg');
+        margin-left: 1em;
+    }
+
+    &__login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__hero{
+        width: 100%;
+        z-index: 0;
+    }
+}
+
+.active{
+    display: block;
+}
+
+.main-content{
+    text-align: center;
+    margin-top: 47px;
+    margin-bottom: 48px;
+
+    p{
+        color: $light_color;
+    }
+
+    a{
+        display: block;
+        color: white;
+        background-color: black;
+        width: 136px;
+        margin: auto;
+        padding: .7em;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+}
+
+.client{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-logo:nth-of-type(1){
+        width: 52px;
+    }
+
+    &-logo:nth-of-type(2){
+        width: 81px;
+    }
+    
+    &-logo:nth-of-type(3){
+        width: 60px;
+    }
+
+    &-logo:nth-of-type(4){
+        width: 51px;
+    }
+}

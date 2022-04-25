@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./scss/styles.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="section nav">
+      <div class="nav__container">
+        <img src="images/logo.svg" alt="logo">
+        <img class='menu' src="images/icon-menu.svg" alt="">
+      </div>
+      <div class="nav__links">
+        <ul class="nav__ul">
+          <li class="nav__arrow">Features</li>
+          <ul class="nav__sub-ul">
+            <li>Todo List</li>
+            <li>Calenders</li>
+            <li>Reminders</li>
+            <li>Planning</li>
+          </ul>
+          <li class="nav__arrow">Company</li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="nav__login">
+          <a class="btn btn--primary" href="#">Login</a>
+          <a class="btn btn--secondary" href="#">Register</a>
+        </div>
+      </div>
+    </nav>
+    <img class="nav__hero" src="images/image-hero-mobile.png" alt="">
+  </header>
+  <main>
+    <div class="section main-content">
+      <h1>Make remote work</h1>
+      <p> Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="section client">
+      <img class="client-logo" src="images/client-audiophile.svg" alt="">
+      <img class="client-logo" src="images/client-databiz.svg" alt="">
+      <img class="client-logo" src="images/client-maker.svg" alt="">
+      <img class="client-logo" src="images/client-meet.svg" alt="">
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Kenneth Chang</a>.
+  </div>
+</body>
+
+</html>
